@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Setting character encoding to UTF-8 -->
+    <meta charset="UTF-8">
+    <!-- Ensuring proper rendering on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Page title -->
+    <title>Weather App</title>
+    <!-- Linking external stylesheet -->
+    <link rel="stylesheet" href="styles/main.css">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="bar">
+            <!-- Weather information section -->
+            <div class="information">
+                <!-- Temperature display -->
+                <div class="graduce roboto-regula">
+                    <h1 data-graduce-text="">-<span>°</span></h1>
+                </div>
+                <!-- City and date information -->
+                <div class="city-info roboto-regular">
+                    <h3 data-city-information="">-</h3>
+                    <p data-time-and-date="">-</p>
+                </div>
+                <!-- Weather condition image -->
+                <div class="weather-image-in-information">
+                    <img src="assets/images/Cloudy.png" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- Sidebar for weather details -->
+        <div class="left-sidebar">
+            <div class="left-sidebar-contaier">
+                <div class="text roboto-regular">Weather Details...</div>
+                <div class="weather-details-container">
+                    <!-- Feels like temperature -->
+                    <div class="max-temp-div roboto-regular">
+                        <h6>Feels like</h6>
+                        <p data-feels-like-temp="" id="max-temp-paragraph-value">-<span>°</span></p>
+                        <img src="assets/icons/temp-min.png" alt="">
+                    </div>
+                    <!-- Humidity information -->
+                    <div class="max-temp-div roboto-regular">
+                        <h6>Humadity</h6>
+                        <p data-humadity="" id="max-temp-paragraph-value">-<span>%</span></p>
+                        <img src="assets/icons/humadity.png" alt="">
+                    </div>
+                    <!-- Cloud cover percentage -->
+                    <div class="max-temp-div roboto-regular">
+                        <h6>Cloudy</h6>
+                        <p data-cloudy="" id="max-temp-paragraph-value">-<span>%</span></p>
+                        <img src="assets/icons/Cloudy.png" alt="">
+                    </div>
+                    <!-- Wind speed -->
+                    <div class="max-temp-div roboto-regular">
+                        <h6>Wind</h6>
+                        <p data-wind="" id="max-temp-paragraph-value">-<span>km/h</span></p>
+                        <img src="assets/icons/wind.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Linking JavaScript files -->
+    <script src="scripts/api.js"></script>
+    <script type="module" src="scripts/app.js"></script>
+</body>
+</html>
