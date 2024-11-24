@@ -20,7 +20,7 @@ export async function FetchWeatherInformation() {
     // Getting the user's city name
     const userCityName = await getUserLocation();
     // Setting the API key and URL for fetching weather data
-    const apiKey = "key=a53808d8d6a140bab4b104656242211";
+    const apiKey = "key=[PATH YOU API KEY]";
     const url = `https://api.weatherapi.com/v1/current.json?${apiKey}&q=${userCityName}`;
     // Fetching weather data from the API
     const unSortedData = await fetch(url, { method: "GET" });
